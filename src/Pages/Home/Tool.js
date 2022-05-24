@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Tool = ({ tool }) => {
     const { name, minimumOrderQuantity, availableQuantity, img, description, price } = tool
@@ -15,7 +16,9 @@ const Tool = ({ tool }) => {
                     <h3 className='text-xl font-bold'>Price: ${price}</h3>
                     <p>{description}</p>
                     <div class="card-actions">
-                        <button class="btn btn-secondary font-bold text-md px-12 text-white">Purchase</button>
+                        <Link to='/purchase'>
+                            <button class="btn btn-secondary font-bold text-md px-12 text-white">Purchase</button>
+                        </Link>
                     </div>
                 </div>
             </div>

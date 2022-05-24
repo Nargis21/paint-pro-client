@@ -38,15 +38,11 @@ const Login = () => {
         }
     }
 
-    // useEffect(() => {
-    //     if (token) {
-    //         navigate(from, { replace: true });
-    //     }
-    // }, [token, from, navigate])
-    // 
-    if (user || googleUser) {
-        navigate('/home')
-    }
+    useEffect(() => {
+        if (user || googleUser) {
+            navigate(from, { replace: true });
+        }
+    }, [user, googleUser, from, navigate])
 
     let signInError
     if (error || googleError || resetError) {
