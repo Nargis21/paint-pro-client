@@ -2,48 +2,48 @@
     {
         "name": "Wall Cleaner",
         "price": 400,
-        "minimum order quantity": 100,
-        "available quantity": 2000,
+        "minimumOrderQuantity": 100,
+        "availableQuantity": 2000,
         "img": "https://i.ibb.co/MPMKJfk/cleaner.jpg",
         "description": "If you have dirty walls, Wall cleaner romove dist and ready it for paint."
     },
     {
         "name": "Spackling",
         "price": 699,
-        "minimum order quantity": 50,
-        "available quantity": 1000,
+        "minimumOrderQuantity": 50,
+        "availableQuantity": 1000,
         "img": "https://i.ibb.co/5RvVthH/spacklingpaste.jpg",
         "description": "Spackling paste, or putty, will be essential for the best looking walls."
     },
     {
         "name": "Tape Reel",
         "price": 300,
-        "minimum order quantity": 150,
-        "available quantity": 3000,
+        "minimumOrderQuantity": 150,
+        "availableQuantity": 3000,
         "img": "https://i.ibb.co/1KmHPHB/tape.jpg",
         "description": "The tape reel is a simpler and more convenient way to apply the tape."
     },
     {
         "name": "Tape Measure",
         "price": 200,
-        "minimum order quantity": 200,
-        "available quantity": 4000,
+        "minimumOrderQuantity": 200,
+        "availableQuantity": 4000,
         "img": "https://i.ibb.co/hKdVdRQ/messure.jpg",
         "description": "There are plenty of occasions when you need a tape measure."
     },
     {
         "name": "Paint Mixer",
         "price": 800,
-        "minimum order quantity": 50,
-        "available quantity": 1000,
+        "minimumOrderQuantity": 50,
+        "availableQuantity": 1000,
         "img": "https://i.ibb.co/YknYnhf/mixer.jpg",
         "description": ". A paint mixer or stirring stick is clean and makes stirring easy."
     },
     {
         "name": "Roller",
         "price": 250,
-        "minimum order quantity": 200,
-        "available quantity": 3000,
+        "minimumOrderQuantity": 200,
+        "availableQuantity": 3000,
         "img": "https://i.ibb.co/wcdmwT8/roller.jpg",
         "description": "Using a roller enables you to cover a much larger area than using a brush."
     }

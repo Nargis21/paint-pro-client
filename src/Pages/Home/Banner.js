@@ -10,7 +10,7 @@ const Banner = () => {
                 <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-bold text-black ">Explore Your Best Paint Tools!</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary text-white">Explore Now</button>
+                    <button class="btn btn-primary text-white font-bold px-12">Explore Now</button>
                 </div>
             </div>
         </div>
