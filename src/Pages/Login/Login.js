@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
-// import useToken from '../../hooks/useToken';
+import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading.js';
 
 const Login = () => {
@@ -28,7 +28,7 @@ const Login = () => {
         auth
     );
 
-    // const [token] = useToken(user || googleUser)
+    const [token] = useToken(user || googleUser)
 
     const handleResetPassword = async () => {
         const email = getValues('email')
@@ -39,10 +39,10 @@ const Login = () => {
     }
 
     useEffect(() => {
-        if (user || googleUser) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user, googleUser, from, navigate])
+    }, [token, from, navigate])
 
     let signInError
     if (error || googleError || resetError) {

@@ -9,6 +9,12 @@ import SignUp from './Pages/Login/SignUp';
 import Header from './Pages/Shared/Header';
 import Purchase from './Pages/Home/Purchase';
 import RequireAuth from './Pages/Login/RequireAuth';
+import Blogs from './Pages/Blogs/Blogs';
+import Portfolio from './Pages/Portfolio/Portfolio';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import AddReview from './Pages/Dashboard/AddReview';
+import MyProfile from './Pages/Dashboard/MyProfile';
 
 function App() {
   return (
@@ -19,9 +25,18 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/purchase' element={
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='/purchase/:id' element={
           <RequireAuth><Purchase></Purchase></RequireAuth>
         }></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth><Dashboard></Dashboard></RequireAuth>
+        }>
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path='review' element={<AddReview></AddReview>}></Route>
+          <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+        </Route>
 
       </Routes>
       <ToastContainer></ToastContainer>
