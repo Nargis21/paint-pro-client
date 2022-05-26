@@ -21,6 +21,7 @@ import ManageOrders from './Pages/Dashboard/ManageOrders';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 import RequireAdmin from './Pages/Dashboard/RequireAdmin';
 import Payment from './Pages/Dashboard/Payment';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         </Route>
 
       </Routes>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );
