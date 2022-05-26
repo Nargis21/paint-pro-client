@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
+        <div className='p-16 my-6'>
             <h1 className='text-2xl text-accent text-bold'>How will you improve the performance of a React Application?</h1>
             <h1 className='text-bold text-xl'> React is a component base application system. It used for single page application. When we use component in react. we can avoid code ripid. Otherhand Route system of react is most important for improve performance of a react application</h1>
             <h1 className='text-2xl text-accent text-bold'>What are the different ways to manage a state in a React application?</h1>
