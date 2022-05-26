@@ -9,7 +9,7 @@ const Tools = () => {
             .then(data => setTools(data))
     }, [])
     return (
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 lg:ml-10'>
             {
                 tools.map(tool => <Tool key={tool._id} tool={tool}></Tool>)
             }

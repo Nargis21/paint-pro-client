@@ -45,7 +45,7 @@ const Purchase = () => {
             toolId: id,
             tool: tool.name,
             price: tool.price,
-            quantity: event.target.quantity.value,
+            quantity: parseInt(event.target.quantity.value),
             name: user.displayName,
             email: user.email,
             phone: event.target.phone.value,
@@ -54,7 +54,8 @@ const Purchase = () => {
         fetch('http://localhost:5000/order', {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
             },
             body: JSON.stringify(order)
         })
@@ -82,11 +83,11 @@ const Purchase = () => {
                         <label class="label">
                             <p class="label-text font-bold">Phone</p>
                         </label>
-                        <input type="text" name='phone' placeholder="Phone" class="input w-full input-warning max-w-xs" />
+                        <input required type="text" name='phone' placeholder="Phone" class="input w-full input-warning max-w-xs" />
                         <label class="label">
                             <p class="label-text font-bold">Address</p>
                         </label>
-                        <input type="text" name='address' placeholder="Address" class="input w-full input-warning max-w-xs" />
+                        <input required type="text" name='address' placeholder="Address" class="input w-full input-warning max-w-xs" />
                         <label class="label">
                             <p class="label-text font-bold">Set Order Quantity</p>
                         </label>

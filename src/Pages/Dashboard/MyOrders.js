@@ -33,38 +33,42 @@ const MyOrders = () => {
     }
 
     return (
-        <div className='p-12 '>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            orders.map((order, index) => <OrdersRow
-                                key={order._id}
-                                order={order}
-                                index={index}
-                                setDeleteConfirm={setDeleteConfirm}
-                                refetch={refetch}
-                            ></OrdersRow>)
-                        }
-                    </tbody>
-                </table>
+        <div>
+            <h1 className='text-3xl font-serif text-center p-4'>My Orders</h1>
+
+            <div className='lg:px-12 '>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                orders.map((order, index) => <OrdersRow
+                                    key={order._id}
+                                    order={order}
+                                    index={index}
+                                    setDeleteConfirm={setDeleteConfirm}
+                                    refetch={refetch}
+                                ></OrdersRow>)
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                {
+                    deleteConfirm && <CancelOrderModal
+                        deleteConfirm={deleteConfirm}
+                        setDeleteConfirm={setDeleteConfirm}
+                        refetch={refetch}
+                    ></CancelOrderModal>
+                }
             </div>
-            {
-                deleteConfirm && <CancelOrderModal
-                    deleteConfirm={deleteConfirm}
-                    setDeleteConfirm={setDeleteConfirm}
-                    refetch={refetch}
-                ></CancelOrderModal>
-            }
         </div>
     );
 };
