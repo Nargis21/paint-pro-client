@@ -18,11 +18,16 @@ const Header = () => {
         <li> <Link to='/dashboard'>Dashboard</Link></li>
         <li> <Link to='/blogs'>Blogs</Link></li>
         <li> <Link to='/portfolio'>My Portfolio</Link></li>
-
+        <li>
+            {
+                user && <p className='text-secondary font-bold font-mono text-xl'>{user.displayName}</p>
+            }
+        </li>
         <li>{user ?
             <button onClick={handleSignout} className="btn btn-primary">Sign Out</button>
             :
             <Link to='/login'>Login</Link>}</li>
+
     </>
     return (
         <div class="navbar bg-zinc-900">
