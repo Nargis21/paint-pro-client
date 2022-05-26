@@ -21,7 +21,7 @@ const Portfolio = () => {
                         <li>MongoDB</li>
                     </ul>
                 </p>
-                <p class="py-3 text-xl font-bold">Here My 3 best application live link:</p>
+                <p class="py-3 text-xl font-bold">Here My 3 best Project live link:</p>
                 <p>Laptop Mart: https://laptop-mart.web.app/</p>
                 <p>Gym Trainer: https://gym-trainer-d8b35.web.app/</p>
                 <p>Laptop Mart: https://standard-bank-nargis21.netlify.app/</p>
