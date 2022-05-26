@@ -22,6 +22,7 @@ import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 import RequireAdmin from './Pages/Dashboard/RequireAdmin';
 import Payment from './Pages/Dashboard/Payment';
 import Footer from './Pages/Shared/Footer';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
             <RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>
           }></Route>
         </Route>
-
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
