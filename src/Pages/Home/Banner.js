@@ -4,7 +4,7 @@ import cartoon from '../../images/cartoon.jpg'
 
 const Banner = () => {
     return (
-        <div class="hero lg:min-h-screen bg-cover bg-center mb-20" style={{ backgroundImage: `url(${banner})` }}>
+        <div class="hero lg:min-h-screen bg-cover bg-center " style={{ backgroundImage: `url(${banner})` }}>
             <div class="hero-overlay bg-opacity-40 bg-black"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
