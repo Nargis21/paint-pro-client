@@ -7,7 +7,7 @@ const Commitment = () => {
             <h1 className='text-4xl font-sarif text-accent text-center font-sarif '>Our Commitment To Yours</h1>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-12 lg:pl-10'>
 
-                <div class="card w-96 bg-neutral text-neutral-content">
+                <div class="card w-96 bg-orange-400 text-white">
                     <div class="card-body items-center text-center">
                         <FontAwesomeIcon className='text-6xl' icon={faPaintBrush}></FontAwesomeIcon>
                         <h1 className='text-2xl font-bold text-white mt-2 '>Qualified Tools</h1>
@@ -21,7 +21,7 @@ const Commitment = () => {
                         <p className='text-white'>The most important attribute of good customer service</p>
                     </div>
                 </div>
-                <div class="card w-96 bg-neutral text-neutral-content">
+                <div class="card w-96 bg-orange-400 text-white">
                     <div class="card-body items-center text-center">
                         <FontAwesomeIcon className='text-6xl' icon={faCreditCardAlt}></FontAwesomeIcon>
                         <h1 className='text-2xl font-bold text-white mt-2 '>Affordable Prices</h1>

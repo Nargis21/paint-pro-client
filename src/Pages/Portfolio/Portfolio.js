@@ -3,7 +3,7 @@ import React from 'react';
 const Portfolio = () => {
     return (
         <div>
-            <div class=" bg-base-200 text-center py-16">
+            {/* <div class=" bg-base-200 text-center py-16">
 
                 <h1 class="text-4xl font-bold text-accent">Nargis Akther</h1>
                 <p class="py-3 text-xl font-bold">Email Address:nargisakther1933@gmail.com</p>
@@ -25,7 +25,7 @@ const Portfolio = () => {
                 <p>Laptop Mart: https://laptop-mart.web.app/</p>
                 <p>Gym Trainer: https://gym-trainer-d8b35.web.app/</p>
                 <p>Laptop Mart: https://standard-bank-nargis21.netlify.app/</p>
-            </div>
+            </div> */}
         </div>
     );
 };
