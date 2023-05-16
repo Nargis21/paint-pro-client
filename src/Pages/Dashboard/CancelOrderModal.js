@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const CancelOrderModal = ({ deleteConfirm, setDeleteConfirm, refetch }) => {
     const { _id } = deleteConfirm
     const handleOrderDelete = () => {
-        fetch(`http://localhost:5000/order/${_id}`, {
+        fetch(`https://paint-pro-server.vercel.app/order/${_id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

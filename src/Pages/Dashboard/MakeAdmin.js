@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UsersRow from './UsersRow';
 
 const MakeAdmin = () => {
-    const { isLoading, data: users, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { isLoading, data: users, refetch } = useQuery('users', () => fetch('https://paint-pro-server.vercel.app/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

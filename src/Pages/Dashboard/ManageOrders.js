@@ -11,7 +11,7 @@ const ManageOrders = () => {
     const [deleteConfirm, setDeleteConfirm] = useState(null)
     const navigate = useNavigate()
 
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('http://localhost:5000/orders', {
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://paint-pro-server.vercel.app/orders', {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

@@ -7,7 +7,7 @@ import ProductsRow from './ProductsRow';
 const ManageProducts = () => {
     const [deleteConfirm, setDeleteConfirm] = useState(null)
 
-    const { data: tools, isLoading, refetch } = useQuery('tools', () => fetch('http://localhost:5000/tool')
+    const { data: tools, isLoading, refetch } = useQuery('tools', () => fetch('https://paint-pro-server.vercel.app/tool')
         .then(res => res.json()))
 
     if (isLoading) {
