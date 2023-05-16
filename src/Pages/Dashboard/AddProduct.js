@@ -13,7 +13,7 @@ const AddProduct = () => {
             description: event.target.description.value,
         }
         console.log(product)
-        fetch('https://desolate-garden-31913.herokuapp.com/tool', {
+        fetch('http://localhost:5000/tool', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

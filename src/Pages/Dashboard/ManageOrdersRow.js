@@ -4,7 +4,7 @@ const ManageOrdersRow = ({ order, index, setDeleteConfirm, refetch }) => {
     const { _id, name, tool, price, quantity } = order
     const [reload, setReload] = useState(false)
     const handleUpdateStatus = () => {
-        fetch(`https://desolate-garden-31913.herokuapp.com/orders/${_id}`, {
+        fetch(`http://localhost:5000/orders/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

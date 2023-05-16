@@ -13,7 +13,7 @@ const AddReview = () => {
             comment: event.target.comment.value,
             ratings: event.target.ratings.value
         }
-        fetch('https://desolate-garden-31913.herokuapp.com/review', {
+        fetch('http://localhost:5000/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

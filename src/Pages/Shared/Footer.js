@@ -25,7 +25,7 @@ const Footer = () => {
             </footer>
             <footer class="footer px-10 py-4 bg-zinc-800 text-white border-base-300">
                 <div class="items-center grid-flow-col">
-                    <p>Copyright © 2022 - All right reserved by Paint Pro</p>
+                    <p>Copyright © 2023 - All right reserved by Paint Pro</p>
                 </div>
                 <div class="md:place-self-center md:justify-self-end">
                     <div class="grid grid-flow-col gap-4">

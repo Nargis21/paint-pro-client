@@ -12,7 +12,7 @@ const Purchase = () => {
     const [tool, setTool] = useState()
 
     useEffect(() => {
-        fetch(`https://desolate-garden-31913.herokuapp.com/tool/${id}`)
+        fetch(`http://localhost:5000/tool/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTool(data)
@@ -51,7 +51,7 @@ const Purchase = () => {
             phone: event.target.phone.value,
             address: event.target.address.value
         }
-        fetch('https://desolate-garden-31913.herokuapp.com/order', {
+        fetch('http://localhost:5000/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

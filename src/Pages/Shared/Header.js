@@ -16,8 +16,8 @@ const Header = () => {
     const menuItems = <>
         <li> <Link to='/home'>Home</Link></li>
         <li> <Link to='/dashboard'>Dashboard</Link></li>
-        <li> <Link to='/blogs'>Blogs</Link></li>
-        <li> <Link to='/portfolio'>My Portfolio</Link></li>
+        {/* <li> <Link to='/blogs'>Blogs</Link></li> */}
+        {/* <li> <Link to='/portfolio'>My Portfolio</Link></li> */}
         <li>
             {
                 user && <p className='text-secondary font-bold font-mono text-xl'>{user.displayName}</p>
