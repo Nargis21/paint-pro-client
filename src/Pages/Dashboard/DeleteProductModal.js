@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteProductModal = ({ deleteConfirm, setDeleteConfirm, refetch }) => {
     const { _id } = deleteConfirm
     const handleProductDelete = () => {
-        fetch(`https://paint-pro-server.vercel.app/tool/${_id}`, {
+        fetch(`https://paint-pro.up.railway.app/tool/${_id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

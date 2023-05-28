@@ -7,7 +7,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://paint-pro-server.vercel.app/admin/${email}`, {
+            fetch(`https://paint-pro.up.railway.app/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -13,7 +13,7 @@ const AddProduct = () => {
             description: event.target.description.value,
         }
         console.log(product)
-        fetch('https://paint-pro-server.vercel.app/tool', {
+        fetch('https://paint-pro.up.railway.app/tool', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -12,7 +12,7 @@ const CheckoutForm = ({ order }) => {
     const [clientSecret, setClientSecret] = useState('')
     const [transactionId, setTransactionId] = useState('')
     useEffect(() => {
-        fetch('https://paint-pro-server.vercel.app/create-payment-intent', {
+        fetch('https://paint-pro.up.railway.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -70,7 +70,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://paint-pro-server.vercel.app/order/${_id}`, {
+            fetch(`https://paint-pro.up.railway.app/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

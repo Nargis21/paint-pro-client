@@ -12,7 +12,7 @@ const Purchase = () => {
     const [tool, setTool] = useState()
 
     useEffect(() => {
-        fetch(`https://paint-pro-server.vercel.app/tool/${id}`)
+        fetch(`https://paint-pro.up.railway.app/tool/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTool(data)
@@ -51,7 +51,7 @@ const Purchase = () => {
             phone: event.target.phone.value,
             address: event.target.address.value
         }
-        fetch('https://paint-pro-server.vercel.app/order', {
+        fetch('https://paint-pro.up.railway.app/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -13,7 +13,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth)
     const navigate = useNavigate()
 
-    const { data: orders, isLoading, refetch } = useQuery(['orders', user], () => fetch(`https://paint-pro-server.vercel.app/order?email=${user.email}`, {
+    const { data: orders, isLoading, refetch } = useQuery(['orders', user], () => fetch(`https://paint-pro.up.railway.app/order?email=${user.email}`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
