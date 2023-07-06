@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51L281ULQVp5vUycMlsoCxNYBZUrQWgl92Xkao
 
 const Payment = () => {
     const { id } = useParams()
-    const { data: order, isLoading } = useQuery(['order', id], () => fetch(`https://paint-pro.up.railway.app/order/${id}`, {
+    const { data: order, isLoading } = useQuery(['order', id], () => fetch(`https://paint-pro-server.vercel.app/order/${id}`, {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

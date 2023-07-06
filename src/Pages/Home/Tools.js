@@ -4,7 +4,7 @@ import Tool from './Tool';
 const Tools = () => {
     const [tools, setTools] = useState([])
     useEffect(() => {
-        fetch('https://paint-pro.up.railway.app/tool')
+        fetch('https://paint-pro-server.vercel.app/tool')
             .then(res => res.json())
             .then(data => setTools(data))
     }, [])

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const UsersRow = ({ user, index, refetch }) => {
     const { email, role } = user
     const makeAdmin = () => {
-        fetch(`https://paint-pro.up.railway.app/user/admin/${email}`, {
+        fetch(`https://paint-pro-server.vercel.app/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

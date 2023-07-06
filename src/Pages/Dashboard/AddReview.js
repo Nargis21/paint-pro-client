@@ -13,7 +13,7 @@ const AddReview = () => {
             comment: event.target.comment.value,
             ratings: event.target.ratings.value
         }
-        fetch('https://paint-pro.up.railway.app/review', {
+        fetch('https://paint-pro-server.vercel.app/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

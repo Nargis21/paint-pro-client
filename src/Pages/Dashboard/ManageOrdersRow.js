@@ -4,7 +4,7 @@ const ManageOrdersRow = ({ order, index, setDeleteConfirm, refetch }) => {
     const { _id, name, tool, price, quantity } = order
     const [reload, setReload] = useState(false)
     const handleUpdateStatus = () => {
-        fetch(`https://paint-pro.up.railway.app/orders/${_id}`, {
+        fetch(`https://paint-pro-server.vercel.app/orders/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

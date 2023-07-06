@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading'
 import Review from './Review';
 
 const Reviews = () => {
-    const { data: reviews, isLoading } = useQuery('reviews', () => fetch('https://paint-pro.up.railway.app/review').then(res => res.json()))
+    const { data: reviews, isLoading } = useQuery('reviews', () => fetch('https://paint-pro-server.vercel.app/review').then(res => res.json()))
 
     if (isLoading) {
         return <Loading></Loading>

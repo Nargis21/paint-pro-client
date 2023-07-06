@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth)
-    const { data, isLoading, refetch } = useQuery('user', () => fetch(`https://paint-pro.up.railway.app/user/${user.email}`, {
+    const { data, isLoading, refetch } = useQuery('user', () => fetch(`https://paint-pro-server.vercel.app/user/${user.email}`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -29,7 +29,7 @@ const MyProfile = () => {
         }
         console.log(updatedUser)
         if (email) {
-            fetch(`https://paint-pro.up.railway.app/user/update/${email}`, {
+            fetch(`https://paint-pro-server.vercel.app/user/update/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
